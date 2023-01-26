@@ -58,6 +58,9 @@
 
       <ul class="navbar-nav">
 <li class="nav-item">
+  <a class="external-link nav-link" href="https://josephng-bio.org">Joseph Ng's website</a>
+</li>
+<li class="nav-item">
   <a class="external-link nav-link" href="https://github.com/Fraternalilab/sciCSR/" aria-label="github">
     <span class="fa fa-github"></span>
      
@@ -320,7 +323,7 @@
 </h2>
 <p>The visualisations above clearly show some similarities (for example, the transitions from MBC pointing towards the direction of germinal center [GC]) and differences (e.g. strong transitions in the GC based on RNA velocity appears not backed up with CSR/SHM) between inferences based on RNA velocity versus CSR/SHM. sciCSR provides further functionalities to compare these different sets of inferred transitions. One way to gain further insights would be to apply Transition Path Theory (TPT) to estimate the amount of fluxes between states - we have covered TPT in the <a href="csr.html">basic sciCSR usage vignette</a>. You may want to take a look at the vignette and see how we can do that.</p>
 <p>Here we show you another way to answer the question of ‘How different are the transitions inferred using CSR/SHM to those based on RNA velocity’. In sciCSR we uses CSR/SHM information to fit models of state transitions using Markov State Models (MSM). One powerful properties of MSM is, they specify the transition likelihoods between every state in the data, such that we can ‘generate’/‘simulate’ new transitions as if we have data from a new cell and follow how it moves across the landscape of states. Similar MSMs would produce similar pathways of transitions across this landscape; we can take a note at the frequencies each state is visited in these simulated pathways, and then derive a numerical metric to quantify the similarity in terms of the frequencies of visiting each states in these MSM-simulated paths (Illustration below).</p>
-<p><img src="images/sample_msm.png" title="Illustration of sampling MSM and comparing inferences" alt="Illustration of sampling MSM and comparing inferences" width="812"></p>
+<p><img src="images/sample_msm.png" title="Illustration of sampling MSM and comparing inferences" alt="Illustration of sampling MSM and comparing inferences" width="260"></p>
 <p>In sciCSR, the way we can perform this analysis is, first fit transition models and obtain separate R objects which store these models. We can then use the function <code><a href="../reference/compareTransitionMatrices.html">compareTransitionMatrices()</a></code> to quantify the similarities of these transition models:</p>
 <div class="sourceCode" id="cb31"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="co"># Let's first fit transition models using velocity/CSR/SHM</span></span>
