@@ -18,7 +18,7 @@ minimal_mistakes_skin    : "contrast" # "default", "air", "aqua", "contrast", "d
 locale                   : "en-GB"
 title                    : "Joseph Ng"
 title_separator          : "-"
-subtitle                 : "Mutations in Cancer & Immunity" # site tagline that appears below site title in masthead
+subtitle                 : "Computational Biology of Molecular Systems Laboratory" # site tagline that appears below site title in masthead
 name                     : "Joseph Ng"
 description              : "Personal website."
 port                     : 4000
@@ -98,8 +98,8 @@ analytics:
 author:
   name             : "Joseph Ng"
   avatar           : "assets/images/Joseph_Ng.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "All things bioinformatics, data analytics."
-  location         : "Hertfordshire, United Kingdom"
+  bio              : "Research Fellow in Computational Biology. Incoming Lecturer in Computational Biology of Molecular Systems & Group Leader at UCL Research Department of Structural & Molecular Biology"
+  location         : "United Kingdom"
   email            :
   links:
     - label: "Email"
