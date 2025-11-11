@@ -25,12 +25,12 @@ jobs:
 
       - name: Prepare host cache and set ownership to container user
         run: |
-          mkdir -p .jekyll-cache _site /src/jekyll/docs
-          echo "chowning .jekyll-cache, _site and /src/jekyll/docs to ${{ steps.container_user.outputs.uid }}:${{ steps.container_user.outputs.gid }}"
+          mkdir -p .jekyll-cache _site /srv/jekyll/docs
+          echo "chowning .jekyll-cache, _site and /srv/jekyll/docs to ${{ steps.container_user.outputs.uid }}:${{ steps.container_user.outputs.gid }}"
           # chown may require sudo; Actions runner allows sudo
-          sudo chown -R ${{ steps.container_user.outputs.uid }}:${{ steps.container_user.outputs.gid }} .jekyll-cache _site /src/jekyll/docs || true
-          ls -lad .jekyll-cache _site /src/jekyll/docs
-          stat -c "%%n uid=%%u gid=%%g mode=%%a" .jekyll-cache _site /src/jekyll/docs
+          sudo chown -R ${{ steps.container_user.outputs.uid }}:${{ steps.container_user.outputs.gid }} .jekyll-cache _site /srv/jekyll/docs || true
+          ls -lad .jekyll-cache _site /srv/jekyll/docs
+          stat -c "%%n uid=%%u gid=%%g mode=%%a" .jekyll-cache _site /srv/jekyll/docs
           
       - name: Build site with Jekyll Docker container
         run: |
