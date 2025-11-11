@@ -16,11 +16,12 @@ jobs:
       - name: Build site with Jekyll Docker container
         run: |
           docker run --rm \
+            -u 0 \
             -v ${{ github.workspace }}:/srv/jekyll \
             -v ${{ github.workspace }}:/usr/src/app \
             -e JEKYLL_ENV=production \
             jekyll/jekyll:3.8 \
-            jekyll build --no-cache
+            jekyll build
 
       - name: Upload build artifacts
         uses: actions/upload-pages-artifact@v3
