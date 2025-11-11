@@ -12,8 +12,15 @@ permalink: /about/
 
 ![image-center](/assets/images/Joseph.jpg ){: .align-center}
 
-**Joseph (Chi-Fung) Ng**
+**About the lab**
 
+The goal of our lab is to develop tailored methods that harness high-throughput molecular datasets to make sense of molecular and cellular heterogeneity, towards defining emergent rules about the organising principles about these systems and offerring predictive capabilities to manipulate such systems. 
+
+Special interest in the lab lies in the molecular characterisation of cellular states of B cells in health and disease, basic principles of antibody development *in vivo* and as therapeutics, and the application of Artificial Intelligence and Machine Learning approaches in these biological topics and more broadly in omics and systems biology problems.
+
+**About Myself**
+
+Joseph (Chi-Fung) Ng
 *PhD (King's College London)*
 *BBiomedSc (University of Hong Kong)*
 
