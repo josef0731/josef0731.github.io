@@ -41,14 +41,31 @@ jobs:
             jekyll/jekyll:3.8 \
             jekyll build --trace --destination docs
 
-  deploy:
+      - name: Upload built docs folder
+        uses: actions/upload-artifact@v4
+        with:
+          name: built-docs
+          path: docs
+
+  commit:
     needs: build
-    permissions:
-      pages: write
-      id-token: write
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
     steps:
-      - name: Commit and push changes to docs/
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+
+      - name: Download built docs folder
+        uses: actions/download-artifact@v4
+        with:
+          name: built-docs
+          path: docs
+
+      - name: Commit and push updated docs/
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
