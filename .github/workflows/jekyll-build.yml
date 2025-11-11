@@ -13,10 +13,28 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
+      - name: Determine container jekyll user UID/GID
+        id: container_user
+        run: |
+          # print the uid:gid that the default container jekyll user uses
+          CON_UID=$(docker run --rm jekyll/jekyll:3.8 id -u jekyll 2>/dev/null || docker run --rm jekyll/jekyll:3.8 id -u 2>/dev/null || echo 1000)
+          CON_GID=$(docker run --rm jekyll/jekyll:3.8 id -g jekyll 2>/dev/null || docker run --rm jekyll/jekyll:3.8 id -g 2>/dev/null || echo 1000)
+          echo "uid=$CON_UID" >> $GITHUB_OUTPUT
+          echo "gid=$CON_GID" >> $GITHUB_OUTPUT
+          echo "Detected container uid/gid: $CON_UID:$CON_GID"
+
+      - name: Prepare host cache and set ownership to container user
+        run: |
+          mkdir -p .jekyll-cache _site
+          echo "chowning .jekyll-cache and _site to ${{ steps.container_user.outputs.uid }}:${{ steps.container_user.outputs.gid }}"
+          # chown may require sudo; Actions runner allows sudo
+          sudo chown -R ${{ steps.container_user.outputs.uid }}:${{ steps.container_user.outputs.gid }} .jekyll-cache _site || true
+          ls -lad .jekyll-cache _site
+          stat -c "%%n uid=%%u gid=%%g mode=%%a" .jekyll-cache _site
+          
       - name: Build site with Jekyll Docker container
         run: |
           docker run --rm \
-            -u 0 \
             -v ${{ github.workspace }}:/srv/jekyll \
             -v ${{ github.workspace }}:/usr/src/app \
             -e JEKYLL_ENV=production \
