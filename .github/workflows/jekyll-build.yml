@@ -21,7 +21,7 @@ jobs:
             -v ${{ github.workspace }}:/usr/src/app \
             -e JEKYLL_ENV=production \
             jekyll/jekyll:3.8 \
-            jekyll build
+            jekyll build --trace
 
       - name: Upload build artifacts
         uses: actions/upload-pages-artifact@v3
