@@ -2,10 +2,12 @@
 main:
   - title: "About myself"
     url: /about/
-  - title: "Projects"
-    url: /projects/
+  - title: "About the lab"
+    url: /research/
   - title: "Publications"
     url: /publications/
+  - title: "UCL Profile Page"
+    url: https://profiles.ucl.ac.uk/92512-joseph-ng/  
   # - title: "Quick-Start Guide"
   #  url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
   # - title: "About"
