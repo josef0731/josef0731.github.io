@@ -18,4 +18,9 @@ feature_row:
 
 # About the lab
 
+The goal of our lab is to develop tailored methods that harness high-throughput molecular datasets to make sense of molecular and cellular heterogeneity, towards defining emergent rules about the organising principles about these systems and offerring predictive capabilities to manipulate such systems. 
+
+Special interest in the lab lies in the molecular characterisation of cellular states of B cells in health and disease, basic principles of antibody development *in vivo* and as therapeutics, and the application of Artificial Intelligence and Machine Learning approaches in these biological topics and more broadly in omics and systems biology problems.
+
+
 {% include feature_row %}
