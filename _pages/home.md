@@ -4,7 +4,7 @@ permalink: /
 author_profile: true
 ---
 
-# Computational Biology of Molecular Systems Laboratory
+# Cross-scale Interpretable Omics Laboratory
 
 Our lab works on developing new computational methods to study and characterise molecular systems that play significant roles in immunity and cancer. We are based at the Research Department of [Structural & Molecular Biology (SMB)](https://www.ucl.ac.uk/life-sciences/smb), Division of Biosciences at UCL.
 
