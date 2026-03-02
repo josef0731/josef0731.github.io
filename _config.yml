@@ -18,7 +18,7 @@ minimal_mistakes_skin    : "contrast" # "default", "air", "aqua", "contrast", "d
 locale                   : "en-GB"
 title                    : "Joseph Ng"
 title_separator          : "-"
-subtitle                 : "Computational Biology of Molecular Systems Laboratory" # site tagline that appears below site title in masthead
+subtitle                 : "Cross-scale Interpretable Omics Laboratory" # site tagline that appears below site title in masthead
 name                     : "Joseph Ng"
 description              : "Personal website."
 port                     : 4000
@@ -98,16 +98,16 @@ analytics:
 author:
   name             : "Joseph Ng"
   avatar           : "assets/images/Joseph_Ng.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "(From Jan 2026) Lecturer in Computational Biology of Molecular Systems, UCL"
+  bio              : "Group Leader & Lecturer in Computational Biology of Molecular Systems, UCL"
   location         : "United Kingdom"
   email            :
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
       # url: "mailto:your.name@email.com"
-    - label: "Website"
+    - label: "UCL Profile"
       icon: "fas fa-fw fa-link"
-      # url: "https://your-website.com"
+      url: "https://profiles.ucl.ac.uk/92512-joseph-ng/"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       url: "https://twitter.com/JosefNg1"
