@@ -1,0 +1,23 @@
+<div class="people-grid">
+  {% for person in site.data.people %}
+  <div class="person-card">
+    {% if person.page %}<a href="{{ person.page | relative_url }}">{% endif %}
+      {% if person.image %}
+        <img class="person-card__photo" src="{{ person.image | relative_url }}" alt="{{ person.name }}">
+      {% else %}
+        <div class="person-card__photo person-card__photo--blank"><i class="fas fa-user"></i></div>
+      {% endif %}
+      <div class="person-card__name">{{ person.name }}</div>
+    {% if person.page %}</a>{% endif %}
+    {% if person.role %}<div class="person-card__role">{{ person.role }}</div>{% endif %}
+    <div class="person-card__links">
+      {% if person.email %}<a href="mailto:{{ person.email }}" title="Email"><i class="fas fa-envelope"></i></a>{% endif %}
+      {% if person.website %}<a href="{{ person.website }}" title="Website"><i class="fas fa-link"></i></a>{% endif %}
+      {% if person.github %}<a href="https://github.com/{{ person.github }}" title="GitHub"><i class="fab fa-github"></i></a>{% endif %}
+      {% if person.orcid %}<a href="https://orcid.org/{{ person.orcid }}" title="ORCID"><i class="fab fa-orcid"></i></a>{% endif %}
+      {% if person.linkedin %}<a href="https://www.linkedin.com/in/{{ person.linkedin }}" title="LinkedIn"><i class="fab fa-linkedin"></i></a>{% endif %}
+      {% if person.twitter %}<a href="https://twitter.com/{{ person.twitter }}" title="X / Twitter"><i class="fab fa-twitter"></i></a>{% endif %}
+    </div>
+  </div>
+  {% endfor %}
+</div>

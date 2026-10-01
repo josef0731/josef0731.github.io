@@ -291,10 +291,10 @@ defaults:
       related: true
 
 # jekyll-scholar settings
-scholar:
-  source: ./_pages
-  bibliography: publications.bib
-  sort_by: month
-  order: descending
-  group_by: year
-  group_order: descending
+#scholar:
+#  source: ./_pages
+#  bibliography: publications.bib
+#  sort_by: month
+#  order: descending
+#  group_by: year
+#  group_order: descending

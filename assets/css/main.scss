@@ -6,3 +6,54 @@
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
+
+.archive__item-teaser img {
+  max-height: 200px;
+  object-fit: cover;
+  width: 100%;
+}
+
+/* People page */
+.people-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 1.5em;
+  margin: 1.5em 0;
+}
+
+.person-card {
+  text-align: center;
+
+  a { text-decoration: none; }
+}
+
+.person-card__photo {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 0 auto 0.5em;
+  display: block;
+}
+
+.person-card__photo--blank {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #e5e5e5;
+  color: #999;
+  font-size: 3em;
+}
+
+.person-card__name { font-weight: bold; }
+
+.person-card__role {
+  font-size: 0.8em;
+  color: #666;
+}
+
+.person-card__links {
+  margin-top: 0.3em;
+
+  a { margin: 0 0.25em; }
+}

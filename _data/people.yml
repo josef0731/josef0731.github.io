@@ -1,0 +1,26 @@
+# Lab members shown on /people/ (in this order).
+# Only `name` is required. Leave a field out (or empty) to hide it.
+#   image: path to a photo, ideally square, e.g. /assets/images/people/jane.jpg
+#   page:  link to the member's own page (makes the photo and name clickable)
+
+- name: "Joseph Ng"
+  role: "Group Leader"
+  image: /assets/images/Joseph_Ng.png
+  page: /about/
+  email: joseph.ng@ucl.ac.uk
+  github: josef0731
+  orcid:
+  linkedin: joseph-chi-fung-ng-6a6bb2120
+  twitter: josefng1
+  website: https://profiles.ucl.ac.uk/92512-joseph-ng/
+
+#- name: "New Member"
+#  role: "PhD Student"
+#  image:
+#  email:
+#  page: /people/new-member/
+#  github:
+#  orcid:
+#  linkedin:
+#  twitter:
+#  website:

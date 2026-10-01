@@ -19,3 +19,10 @@ Some of my key works in the area:
 * We created sciCSR that extracts B cell specific biological signals from scRNA-seq alignments and use this to understand the dynamics of B cell maturation ([*Nature Methods 2024*](https://doi.org/10.1038/s41592-023-02060-1))
 
 I am keen to explore a wide variety of biological systems beyond B cells. We are also exploring new methods and strategies to characterise and understand Artificial Intelligence methods developed in this area, to understand how these approaches learn novel biology from noisy, complex measurements of molecular outputs of cells.
+
+# Code
+
+[sciCSR](https://github.com/Fraternalilab/sciCSR): R package for detecting sterile and productive immunoglobulin transcripts from scRNA-seq sequencing data of B cells, and use these signals to build models to describe transitions between B cell states.
+
+[scRNAVeloQuant](https://github.com/Fraternalilab/scRNAVeloQuant): R code snippet to quantify transitions between cell types from RNA velocity estimates in single-cell RNA sequencing data analysis.
+

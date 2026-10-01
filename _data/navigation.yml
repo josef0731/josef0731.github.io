@@ -4,8 +4,10 @@ main:
     url: /about/
   - title: "About the lab"
     url: /research/
-  - title: "Publications"
-    url: /publications/
+  - title: "People"
+    url: /people/
+  - title: "My Publications"
+    url: https://scholar.google.com/citations?user=POer3hwAAAAJ&hl=en
   - title: "UCL Profile Page"
     url: https://profiles.ucl.ac.uk/92512-joseph-ng/  
   # - title: "Quick-Start Guide"
