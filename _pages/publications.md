@@ -10,5 +10,5 @@ title: "Publications"
 permalink: /publications/
 ---
 
-{% bibliography %}
+<!-- Add publications here. -->
 
